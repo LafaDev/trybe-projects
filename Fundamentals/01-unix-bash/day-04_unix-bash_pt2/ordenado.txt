@@ -1,0 +1,6 @@
+azul
+branco
+cachorro
+coelho
+gato
+vermelho
