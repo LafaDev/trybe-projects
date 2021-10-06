@@ -1,37 +1,41 @@
 div:hover{
   border: 2px solid black;
 }
-.prim{
-  color: red;
+
+div:nth-of-type(1){
+  background-color: blue;
 }
-.prim h3{
-  font-family: Monospace;
-  font-style: italic;
+div:nth-of-type(2){
+  background-color: green;
+  height: 50px;
 }
-.second{
-  color: orange;
+div:nth-of-type(3){
+  background-color: yellow;
+
 }
-.second h3{
-  font-family: Monospace;
+div:nth-of-type(4){
+  background-color: purple;
 }
-.comp{
-  font-size: 200%;
-  color: blue;
+div:nth-of-type(5){
+  background-color: orange;
 }
-.comp h3{
-  font-family: Monospace;
-  font-style: italic;
+
+div:nth-of-type(1) > h3 {
+  color: white;
 }
-.esc{
-  color: purple;
-}
-.esc h3{
+div:nth-of-type(2) > h3 {
   font-family: Monospace;
 }
-.clara{
+div:nth-of-type(3) > h3 {
+  font-weight: bold;
+}
+div:nth-of-type(4) > h3 {
   color: yellow;
 }
-.clara h3{
-  font-family: Monospace;
+div:nth-of-type(5) > h3 {
+  font-size: 20px;
+}
+
+div:nth-child(odd) h3 {
   font-style: italic;
 }
