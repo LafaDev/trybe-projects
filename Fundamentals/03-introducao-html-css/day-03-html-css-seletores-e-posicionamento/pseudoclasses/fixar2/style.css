@@ -1,0 +1,37 @@
+div:hover{
+  border: 2px solid black;
+}
+.prim{
+  color: red;
+}
+.prim h3{
+  font-family: Monospace;
+  font-style: italic;
+}
+.second{
+  color: orange;
+}
+.second h3{
+  font-family: Monospace;
+}
+.comp{
+  font-size: 200%;
+  color: blue;
+}
+.comp h3{
+  font-family: Monospace;
+  font-style: italic;
+}
+.esc{
+  color: purple;
+}
+.esc h3{
+  font-family: Monospace;
+}
+.clara{
+  color: yellow;
+}
+.clara h3{
+  font-family: Monospace;
+  font-style: italic;
+}
