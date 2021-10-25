@@ -97,6 +97,11 @@
         unList.appendChild(number);
     }
     // Adicione 3 tags h3, todas sendo filhas do main criado no passo 2
+    for (let i = 0; i < 3; i += 1) {
+        let elementH3 = document.createElement('h3');
+        elementH3.innerHTML = 'h3 number ' + (i + 1);
+        mainElement.appendChild(elementH3)
+    }
     </script>
   </body>
 </html>
