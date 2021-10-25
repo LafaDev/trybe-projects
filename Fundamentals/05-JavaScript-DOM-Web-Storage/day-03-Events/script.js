@@ -73,4 +73,21 @@ function bntFriday(fridayString) {
     btnContainer = document.querySelector('.buttons-container')
     btnContainer.appendChild(fridayButton);
 }
+let fridayDays = [ 4, 11, 18, 25];
 bntFriday('Sexta-Feira');
+function displayFridays(){
+    let fridayBttn = document.querySelector('#btn-friday');
+    fridayBttn.addEventListener('click', alternateText);
+    function alternateText(){
+        let classDays = document.querySelectorAll('.friday');
+        for (let i = 0; i < classDays.length; i += 1) {
+            let day = classDays[i].innerText;
+            if (day !== 'sextou') {
+                classDays[i].innerText = 'sextou';
+            } else {
+                classDays[i].innerText = fridayDays[i];
+            }
+        }   
+    }
+}
+displayFridays();
