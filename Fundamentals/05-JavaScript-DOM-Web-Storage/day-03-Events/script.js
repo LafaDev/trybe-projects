@@ -66,3 +66,11 @@ function displayHolidays(){
     }
 }
 displayHolidays();
+function bntFriday(fridayString) {
+    fridayButton = document.createElement('button');
+    fridayButton.innerHTML = fridayString;
+    fridayButton.id = 'btn-friday';
+    btnContainer = document.querySelector('.buttons-container')
+    btnContainer.appendChild(fridayButton);
+}
+bntFriday('Sexta-Feira');
