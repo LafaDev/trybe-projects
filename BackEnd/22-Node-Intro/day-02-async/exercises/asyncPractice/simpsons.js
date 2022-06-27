@@ -35,12 +35,20 @@ async function simpsonsFamily() {
   await fs.writeFile('./simpsonsFamily.json', JSON.stringify(family));
 }
 
+async function addNelson() {
+  const fileContent = await fs.readFile('./simpsonsFamily.json', 'utf-8');
+  const family = JSON.parse(fileContent);
+  family.push({ id: '8', name: 'Nerson Muntz' });
+  await fs.writeFile('./simpsonsFamily.json', JSON.stringify(family));
+}
+
 async function main() {
   readFiles();
   const simpson = await getSimpsonById(3);
   console.log(simpson);
   filterSimpsons();
   simpsonsFamily();
+  addNelson();
 };
 
 main();
